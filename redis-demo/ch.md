@@ -14,6 +14,6 @@
 
 7.redis 过期key的处理
 
-8. java 集成 redis --jedis lettuce
+8.java 集成 redis --jedis lettuce
 
-9. 小案例--拓展
+9.小案例--拓展
