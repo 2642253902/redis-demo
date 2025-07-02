@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+<body>
+<h1>文章标题</h1>
+<div>
+    <p>这里是文章内容...</p>
+    <p>更多文章内容...</p>
+</div>
+<div>
+    阅读数：<span id="sp" style="color: red;">0</span>
+</div>
+<script>
+    $(function () {
+        $.post("/articles/incr",{id:1},function (data) {
+            //返回+1之后阅读数
+            $("#sp").html(data);
+        })
+    })
+</script>
+
+</body>
+</html>
